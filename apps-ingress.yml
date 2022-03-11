@@ -16,7 +16,7 @@ spec:
             name: app-a-app-a-svc
             port:
               number: 80
-  - host: "app_b.com"
+  - host: "app-b.com"
     http:
       paths:
       - pathType: Prefix
