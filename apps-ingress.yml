@@ -6,7 +6,7 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - host: "appA.com"
+  - host: "app_a.com"
     http:
       paths:
       - pathType: Prefix
@@ -16,7 +16,7 @@ spec:
             name: app_a-app_a-svc
             port:
               number: 80
-  - host: "appB.com"
+  - host: "app_b.com"
     http:
       paths:
       - pathType: Prefix
