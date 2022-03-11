@@ -6,14 +6,14 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - host: "app_a.com"
+  - host: "app-a.com"
     http:
       paths:
       - pathType: Prefix
         path: /
         backend:
           service:
-            name: app_a-app_a-svc
+            name: app-a-app-a-svc
             port:
               number: 80
   - host: "app_b.com"
@@ -23,6 +23,6 @@ spec:
         path: /
         backend:
           service:
-            name: app_b-app_b-svc
+            name: app-b-app-b-svc
             port:
               number: 80
